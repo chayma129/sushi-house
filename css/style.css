@@ -1,4 +1,7 @@
 
+/* =========================
+   GENERAL
+========================= */
 
 * {
     box-sizing: border-box;
@@ -12,29 +15,27 @@ html {
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #f8f5f0;
-    color: #292323;
+    background-color: #080808;
+    color: #ffffff;
     line-height: 1.7;
 }
 
+/* =========================
+   HEADER
+========================= */
 
 header {
-    background-color: #f5e6d3;
-    color: rgb(206, 8, 8);
+    background-color: #080808;
+    color: #d6ad55;
     text-align: center;
     padding: 35px 20px;
 }
-form {
-    max-width: 600px;
-    background-color: #f5e6d3;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-}
+
 header h1 {
     font-size: 45px;
-    color: #e63946;
+    color: #d6ad55;
     margin-bottom: 15px;
+    letter-spacing: 3px;
 }
 
 header figure {
@@ -55,90 +56,108 @@ header img:hover {
 }
 
 figcaption {
-    color: #f74159f5;
+    color: #d6ad55;
     font-style: italic;
 }
 
 header p {
     max-width: 800px;
     margin: 15px auto;
+    color: #dddddd;
 }
 
+/* =========================
+   FORM
+========================= */
+
+form {
+    max-width: 600px;
+    margin: 20px auto;
+    background-color: #151515;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #8b6b32;
+}
+
+/* =========================
+   NAVIGATION
+========================= */
 
 nav {
-    background-color: #a8202b;
-    padding: 15px;
+    background-color: #111111;
+    padding: 20px;
     position: sticky;
     top: 0;
     z-index: 10;
+    border-bottom: 1px solid #8b6b32;
 }
 
-nav ol {
+nav ol,
+nav ul {
     list-style: none;
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
     gap: 25px;
 }
 
 nav a {
-    color: white;
+    display: inline-block;
+    color: #d6ad55;
     text-decoration: none;
     font-weight: bold;
-    transition: color 0.3s;
+    font-size: 16px;
+    padding: 10px 25px;
+    border: 1px solid #8b6b32;
+    border-radius: 25px;
+    transition: all 0.4s ease;
 }
 
 nav a:hover {
-    color: #ffd6a5;
+    background-color: #d6ad55;
+    color: #080808;
+    transform: translateY(-4px);
+    box-shadow: 0 5px 15px rgba(214, 173, 85, 0.35);
 }
 
-ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    gap: 25px;
-}
+/* =========================
+   MAIN
+========================= */
 
-ul a {
-    text-decoration: none;
-    color: white;
-    background-color: #a8202b;
-    padding: 10px 20px;
-    border-radius: 8px;
-    display: inline-block;
-}
-
-ul a:hover {
-    background-color: #e63946;
-    transform: scale(1.05);
-}
 main {
     width: 90%;
     max-width: 1100px;
     margin: 30px auto;
 }
 
+/* =========================
+   SECTIONS
+========================= */
 
 section {
-    background-color: white;
+    background-color: #141414;
+    color: #ffffff;
     padding: 30px;
     margin-bottom: 30px;
     border-radius: 12px;
-    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+    border: 1px solid #332817;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.3);
 }
 
 section h2 {
-    color: #a8202b;
+    color: #d6ad55;
     font-size: 28px;
     margin-bottom: 15px;
-    border-bottom: 2px solid #e8b5a0;
+    border-bottom: 2px solid #8b6b32;
     padding-bottom: 8px;
 }
 
 section p {
     margin: 15px 0;
+    color: #dddddd;
 }
-
 
 section ul {
     padding-left: 25px;
@@ -149,9 +168,33 @@ section li {
 }
 
 strong {
-    color: #a8202b;
+    color: #d6ad55;
 }
 
+/* =========================
+   LISTS AND LINKS
+========================= */
+
+ul {
+    list-style: none;
+}
+
+a {
+    transition: 0.3s;
+}
+
+section a {
+    color: #d6ad55;
+}
+
+section a:hover {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+/* =========================
+   TABLE AND IMAGES
+========================= */
 
 table {
     width: 100%;
@@ -161,6 +204,7 @@ table {
 
 td {
     padding: 10px;
+    color: white;
 }
 
 td img {
@@ -169,20 +213,24 @@ td img {
     height: 200px;
     object-fit: cover;
     border-radius: 12px;
-    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    border: 1px solid #8b6b32;
+    transition: transform 0.4s ease,
+                box-shadow 0.4s ease;
 }
 
-
 td img:hover {
-    transform: scale(1.08);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(214, 173, 85, 0.25);
 }
 
 td h3 {
-    color: #a8202b;
+    color: #d6ad55;
     margin-top: 10px;
 }
 
+/* =========================
+   VIDEO AND AUDIO
+========================= */
 
 video {
     width: 100%;
@@ -199,30 +247,20 @@ audio {
     margin: 15px auto;
 }
 
-
-a {
-    transition: 0.3s;
-}
-
-section a {
-    color: #a8202b;
-}
-
-section a:hover {
-    color: #e63946;
-    text-decoration: none;
-}
-
+/* =========================
+   FOOTER
+========================= */
 
 footer {
-    background-color: #813f3f;
+    background-color: #111111;
     color: white;
     text-align: center;
     padding: 30px;
+    border-top: 1px solid #8b6b32;
 }
 
 footer h2 {
-    color: #e63946;
+    color: #d6ad55;
     margin-bottom: 10px;
 }
 
@@ -233,12 +271,120 @@ footer a {
 }
 
 footer a:hover {
-    color: #f2c6a0;
+    color: #d6ad55;
 }
 
 footer p {
     margin: 10px;
 }
+
+/* =========================
+   PRIX - MENU
+========================= */
+
+.menu-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.menu-item {
+    position: relative;
+    overflow: hidden;
+    min-height: 230px;
+    padding: 25px;
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    border-radius: 12px;
+    border: 1px solid #8b6b32;
+
+    transition: transform 0.4s ease,
+                box-shadow 0.4s ease;
+}
+
+/* BACKGROUND DES MENUS */
+
+.menu-item:nth-child(1) {
+    background-image: url("../images/menu1.png");
+}
+
+.menu-item:nth-child(2) {
+    background-image: url("../images/menu2.png");
+}
+
+.menu-item:nth-child(3) {
+    background-image: url("../images/menu3.png");
+}
+
+.menu-item:nth-child(4) {
+    background-image: url("../images/menu4.png");
+}
+
+.menu-item:nth-child(5) {
+    background-image: url("../images/dessert.png");
+}
+
+/* OVERLAY SOMBRE */
+
+.menu-item::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.55);
+    z-index: 0;
+}
+
+/* TEXTE AU-DESSUS */
+
+.menu-item .details {
+    position: relative;
+    z-index: 1;
+}
+
+.menu-item .details h2 {
+    color: #d6ad55;
+}
+
+.menu-item .details p,
+.menu-item .details li,
+.menu-item .details .price {
+    color: white;
+}
+
+/* CACHER LES IMAGES HTML */
+
+.menu-item > img {
+    display: none;
+}
+
+/* DESSERT SUR TOUTE LA LARGEUR */
+
+.menu-item.dessert {
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #080808;
+    min-height: 350px;
+}
+
+.menu-item.dessert::before {
+    background: rgba(0, 0, 0, 0.25);
+}
+
+/* HOVER */
+
+.menu-item:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 5px 18px rgba(214, 173, 85, 0.2);
+}
+
+/* =========================
+   TABLETTE
+========================= */
+
 @media (max-width: 768px) {
 
     main {
@@ -253,16 +399,27 @@ footer p {
         width: 100%;
     }
 
+    nav ol,
     nav ul {
-        flex-wrap: wrap;
-        gap: 10px;
+        gap: 15px;
     }
 
     section {
         padding: 20px;
     }
+
+    .menu-container {
+        grid-template-columns: 1fr;
+    }
+
+    .menu-item.dessert {
+        grid-column: auto;
+    }
 }
 
+/* =========================
+   SMARTPHONE
+========================= */
 
 @media (max-width: 480px) {
 
@@ -274,9 +431,16 @@ footer p {
         height: 200px;
     }
 
+    nav ol,
     nav ul {
-        flex-direction: column;
-        align-items: center;
+        flex-direction: row;
+        justify-content: center;
+        gap: 12px;
+    }
+
+    nav a {
+        font-size: 13px;
+        padding: 8px 15px;
     }
 
     section h2 {
@@ -294,5 +458,18 @@ footer p {
 
     video {
         width: 100%;
+    }
+
+    .menu-container {
+        grid-template-columns: 1fr;
+    }
+
+    .menu-item {
+        min-height: 200px;
+        padding: 20px;
+    }
+
+    .menu-item.dessert {
+        grid-column: auto;
     }
 }

@@ -1,70 +1,125 @@
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title >Prix - Sushi House</title>
-  <link rel="stylesheet" href="css/style.css">
-  
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notre Menu - Sushi</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-  <header id="sommaire">
-    <h1>寿司 Sushi House</h1>
-  </header>
-  <ul>
-    <li><a href="index.html"> Accueil </a></li>
-    <li><a href="reservation.html"> Réservation </a></li>
-  </ul>
-  <h1>Bienvenue chez Sushi House</h1>
-  <p >Voici le menu </p>
-  <main>
+  <nav class="prix-nav">
+    <a href="index.html">Accueil</a>
 
-    <section>
-      <h2>Nos Box</h2>
-      <table  border="1">
-        <tr><th>Box</th><th>Contenu</th><th>Prix</th></tr>
-        <tr><td>Box Famille</td><td>24 pièces + 2 boissons</td><td>42 DT</td></tr>
-        <tr><td>Box Duo</td><td>16 pièces</td><td>32 DT</td></tr>
-      </table>
-    </section>
+    <a href="reservation.html">Réservation</a>
+</nav>
 
-    <section>
-      <h2>Nos Maki</h2>
-      <table border="1">
-        <tr><th>Maki</th><th>Contenu</th><th>Prix</th></tr>
-        <tr><td>Maki Saumon</td><td>6 pièces</td><td>15 DT</td></tr>
-        <tr><td>California</td><td>8 pièces</td><td>18 DT</td></tr>
-      </table>
-    </section>
+<div class="page">
 
-    <section>
-      <h2>Nos Yakitoris</h2>
-      <table border="1">
-        <tr><th>Yakitori</th><th>Contenu</th><th>Prix</th></tr>
-        <tr><td>Poulet</td><td>2 brochettes teriyaki</td><td>14 DT</td></tr>
-        <tr><td>Boeuf</td><td>2 brochettes soja</td><td>16 DT</td></tr>
-      </table>
-    </section>
+    
+    <aside class="side-image">
+        <div class="overlay">
+            <h1>OUR<br> SUSHI<br> MENU</h1>
+            <p>Fresh taste, perfect moments</p>
+        </div>
+    </aside>
 
-    <section>
-      <h2>Extras</h2>
-      <table border="1">
-        <tr><th>Extra</th><th>Prix</th></tr>
-        <tr><td>Eau / Soda</td><td>2-3 DT</td></tr>
-      </table>
-    </section>
-    <p><a href="#sommaire">↑ retour au sommaire</a></p>
+    <main class="menu">
 
-  </main> 
+        <header>
+            <h1>PLATEAUX SUSHIS</h1>
+            <p>Découvrez nos délicieux plateaux</p>
+        </header>
 
-  <footer>
-     <h2>Suivez-nous</h2>
-        <p>
-            <a href="https://www.facebook.com/sushihouse" target="-blank" rel="noopener">facebook</a>
-            <a href="https://www.instagram.com/sushihouse" target="-blank" rel="noopener">instagram</a>
-        </p>  
-        <p>&copy; sushi house - 2026</p> 
-  </footer>
+        <div class="menu-container">
+
+          
+            <section class="menu-item">
+                <img src="images/menu1.png" alt="Menu 1">
+
+                <div class="details">
+                    <h2>P1 - CLASSIC BOX</h2>
+                    <span class="price">38 DT</span>
+                    <p>14 pcs</p>
+                    <ul>
+                        <li>4 pcs Nigiri saumon avocat</li>
+                        <li>4 pcs Nigiri saumon</li>
+                        <li>4 pcs California saumon avocat</li>
+                        <li>2 pcs Maki saumon fromage</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="menu-item">
+                <img src="images/menu2.png" alt="Menu 2">
+
+                <div class="details">
+                    <h2>P2 - ADDICT BOX</h2>
+                    <span class="price">51 DT</span>
+                    <p>16 pcs</p>
+                    <ul>
+                        <li>8 pcs FR yutaka</li>
+                        <li>8 pcs Crunchy maki spicy saumon</li>
+                    </ul>
+                </div>
+            </section>
+
+            
+            <section class="menu-item">
+                <img src="images/menu3.png" alt="Menu 3">
+
+                <div class="details">
+                    <h2>P3 - MEDIUM BOX</h2>
+                    <span class="price">42 DT</span>
+                    <p>16 pcs</p>
+                    <ul>
+                        <li>8 pcs Crunchy maki crevette</li>
+                        <li>4 pcs California spicy sake</li>
+                        <li>4 pcs California surimi</li>
+                    </ul>
+                </div>
+            </section>
+
+        
+            <section class="menu-item">
+                <img src="images/menu4.png" alt="Menu 4">
+
+                <div class="details">
+                    <h2>P4 - MINI CRUNCHY BOX</h2>
+                    <span class="price">46 DT</span>
+                    <p>16 pcs</p>
+                    <ul>
+                        <li>4 pcs Crunchy cheesy crevette</li>
+                        <li>4 pcs Crunchy cheesy crabe</li>
+                    </ul>
+                </div>
+            </section>
+
+           
+            <section class="menu-item dessert">
+                <img src="images/dessert.png" alt="Dessert">
+
+                <div class="details">
+                    <h2>DESSERTS</h2>
+                    <span class="price">À partir de 12 DT</span>
+                    <ul>
+                        <li>Mochi glacé</li>
+                        <li>Cheesecake</li>
+                        <li>Fondant au chocolat</li>
+                    </ul>
+                </div>
+            </section>
+
+        </div>
+
+        <footer>
+            <p>Fresh sushi, happy moments ♡</p>
+        </footer>
+
+    </main>
+
+</div>
 
 </body>
 </html>
