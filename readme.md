@@ -42,7 +42,18 @@ Sushi-House/
 │   └── java.js
 │
 └── README.md
-```
+│
+└── images
+      └── crunchy
+      └── dessert
+      └── fussion
+      └── menu1
+      └── menu2
+      └── menu3
+      └── menu4
+      └── sushi
+      └── yakitori
+```  
 
 ## 6. Auteur
 Projet réalisé par : Chayma Trigui
