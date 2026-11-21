@@ -473,3 +473,23 @@ footer p {
         grid-column: auto;
     }
 }
+
+
+/* Champ invalide */
+.invalide {
+    background-color: #ffcccc !important;
+    border: 2px solid red !important;
+}
+
+/* Champ valide */
+.valide {
+    background-color: #ccffcc !important;
+    border: 2px solid green !important;
+}
+
+/* Transition */
+input, select {
+    transition: 0.3s;
+}
+
+
